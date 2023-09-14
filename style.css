@@ -5,13 +5,14 @@ body {
   
   h1 {
     padding: 8px;
-    background: rgba(255, 0, 0, 0.8);
+    background: #4eae91;
+    /*(255, 0, 0, 0.8);*/
     border-radius: 8px;
     margin: 0;
     font-size: 64px;
     font-family: "Roboto Slab", serif;
   }
-  
+
   p {
     line-height: 1.5;
   }
@@ -66,7 +67,7 @@ body {
     background: black;
     border-radius: 8px;
     padding: 0 24px;
-    font-size: 24px;
+    font-size: 30px;
   }
   
   /* Navigation */
@@ -94,7 +95,7 @@ body {
   
   nav a:hover {
     text-decoration: none;
-    color: red;
+    color: #076f64;
   }
   
   nav ul {
@@ -107,7 +108,7 @@ body {
   }
   
   .active {
-    color: #f783ae;
+    color: #4eae91;
   }
   
   #logo-img {
@@ -157,7 +158,7 @@ body {
   
   .section-heading:hover {
     padding: 4px 48px;
-    background: red;
+    background: #076f64;
   }
   
   /* Section Source */
@@ -212,7 +213,7 @@ body {
   }
   
   .btn-readmore:hover {
-    background: red;
+    background: #076f64;
     text-decoration: none;
     padding: 8px 64px 8px 24px;
     color: white;
@@ -233,7 +234,7 @@ body {
   
   footer #left-footer {
     flex: 1;
-    border-right: 1px solid red;
+    border-right: 1px solid #4eae91;
     padding-left: 32px;
   }
   
@@ -270,7 +271,7 @@ body {
   }
   
   footer #social-media-footer ul li:hover a .fa-itch-io {
-    color: red;
+    color: #076f64;
   }
   
   footer #social-media-footer ul li:hover a .fa-linkedin {
@@ -296,7 +297,7 @@ body {
   
   .page-heading:hover{
     padding:4px 48px;
-    background:red;
+    background:#076f64;
   }
   
   .card-meta{
@@ -309,27 +310,7 @@ body {
   .card-meta a{
     color:#333;
   }
-  
-  /* Pagination */
-  
-  .pagination{
-    padding:8px;
-    text-align:center;
-    font-weight:bold;
-  }
-  
-  .pagination a{
-    border-top: 3px solid white;
-    display: inline-block;
-    padding:8px 16px;
-    transition:0.4s;
-  }
-  
-  .pagination a:hover{
-    text-decoration: none;
-    border-top:3px solid black;
-  }
-  
+    
   /* Single Blogpost */
   
   #post-container{
