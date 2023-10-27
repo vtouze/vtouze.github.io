@@ -13,8 +13,17 @@ body {
     font-family: "Roboto Slab", serif;
   }
 
+  h2 {
+    font-size: 50px;
+    font-weight: 1000;
+    text-align: center;
+    justify-content: center;
+    background-position: center;
+  }
+
   p {
     line-height: 1.5;
+    justify-content: center;
   }
   
   main {
@@ -29,6 +38,22 @@ body {
   a:hover {
     text-decoration: underline;
   }
+  /* About Me */
+
+  .PDF {
+    width : 75px;
+    align-items: center;
+  }
+
+  .Profile {
+    width: 200px;
+    object-position: right;
+    outline-offset: 500px;
+    border-image-outset: 15px;
+    outline: #ff03b3;
+    border-radius: 75%;
+  }
+
   
   /* Inputs */
   
