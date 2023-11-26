@@ -39,10 +39,38 @@ body {
     text-decoration: underline;
   }
   /* About Me */
+  
+  .PDFContainer
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px;
+    offset-position: 20px;
+  }
 
+  .PDFText
+  {
+    position: absolute;
+    top: -45%;
+  }
   .PDF {
     width : 75px;
     align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  #PDF1
+  {
+    float: left;
+  }
+
+  #PDF2
+  {
+    float: right;
   }
 
   .Profile {
@@ -50,11 +78,68 @@ body {
     object-position: right;
     outline-offset: 500px;
     border-image-outset: 15px;
-    outline: #ff03b3;
+    outline: #0346ff;
     border-radius: 75%;
   }
 
+  .RightFooter
+  {
+    text-align: right;
+  }
+
+  /* Contact */
+  .container
+  {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form
+  {
+    background: #202125;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
   
+  form h3
+  {
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  form input, form textarea
+  {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #fff;
+    font-size: 16px;
+  }
+
+  form button
+  {
+    padding: 15px;
+    background: #076f64;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+  }
+
   /* Inputs */
   
   input,
@@ -169,6 +254,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 30px;
   }
   
   .section-heading {
@@ -193,7 +279,7 @@ body {
   }
   
   .card-image:hover {
-    box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 20px 20px -10px #777;
   }
   
   .card .card-description {

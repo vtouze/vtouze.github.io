@@ -41,33 +41,43 @@
   <main>
 
     <h2 class="page-heading">Contact</h2>
-    <div id="post-container">
-      <section id="about">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/1.jpg" alt="Card Image">
-          </div>
-          <div class="card-description">
-            <h3>The Introduction</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis fugiat sapiente corrupti iure vitae
-              tempora magnam laboriosam eligendi voluptatem? Quisquam similique officia eum? Ullam ex iste in officia eveniet
-              blanditiis quae iure ducimus explicabo dicta molestias, reiciendis quidem unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis fugiat sapiente corrupti iure vitae
-              tempora magnam laboriosam eligendi voluptatem? Quisquam similique officia eum? Ullam ex iste in officia eveniet
-              blanditiis quae iure ducimus explicabo dicta molestias, reiciendis quidem unde.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis fugiat sapiente corrupti iure vitae
-              tempora magnam laboriosam eligendi voluptatem? Quisquam similique officia eum? Ullam ex iste in officia eveniet
-              blanditiis quae iure ducimus explicabo dicta molestias, reiciendis quidem unde.</p>
-          </div>
-        </div>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Contact Me</h3>
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="email" id="email" placeholder="Email">
+            <textarea id="message" rows="4" placeholder="Write a message"></textarea>
+            <button type="submit">Send</button>
 
-      </section>
-
-      <aside id="sidebar">
-        <h3>Sidebar Heading</h3>
-        <p>Sidebar 1</p>
-      </aside>
+        </form>
     </div>
+    <script>scr="https://smtpjs.com/v3/smtp.js"</script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "touzevirgile@gmail.com",
+                Password : "TTBDALDOTLSSADWDLTWF250820211903$$$$Finally210920030300$$$$",
+                To : 'touzevirgile@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "Name: " + document.getElementById("firstName").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert("Message Sent Succesfully")
+            );
+        }
+    </script>
+
+
+
+
+
+
+
+
 
     <footer>
         <div id="left-footer">
