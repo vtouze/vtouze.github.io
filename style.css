@@ -1,6 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
+    animation: transitionIn 1.5s;
   }
   
   h1 {
@@ -38,6 +39,7 @@ body {
   a:hover {
     text-decoration: underline;
   }
+
   /* About Me */
   
   .PDFContainer
@@ -76,10 +78,8 @@ body {
   .Profile {
     width: 200px;
     object-position: right;
-    outline-offset: 500px;
-    border-image-outset: 15px;
-    outline: #0346ff;
     border-radius: 75%;
+    border: 5px solid #4eae91;
   }
 
   .RightFooter
@@ -183,7 +183,7 @@ body {
   /* Navigation */
   
   nav {
-    height: 72px;
+    height: 75px;
     background: #202125;
     width: 100%;
     margin: 0;
@@ -200,7 +200,7 @@ body {
   nav a {
     padding: 0 32px;
     color: #eee;
-    transition: 0.4s;
+    transition: 0.5s;
   }
   
   nav a:hover {
@@ -232,7 +232,7 @@ body {
   }
   
   #logo-img img {
-    height: 100px;
+    height: 75px;
   }
   
   #logo-img:hover {
@@ -441,6 +441,24 @@ body {
     box-shadow: inset 27px 0 51px -18px rgba(0,0,0,0.75);
   }  
   
+  /* Fade */
+
+  @keyframes transitionIn 
+  {
+    from
+    {
+      opacity: 0;
+      transform: rotateX(0deg);
+    }
+    to
+    {
+      opacity: 1;
+      transform: rotateX(0);
+    }
+  }
+
+  /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
   /* Media Queries */
   
   @media (max-width: 900px) {
