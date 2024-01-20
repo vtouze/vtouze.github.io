@@ -40,6 +40,49 @@ body {
     text-decoration: underline;
   }
 
+  /* School Projects */
+
+  .schoolButtons{
+    display: flex;
+    height: 50px;
+    width: 150px;
+    padding: 0;
+    background: #4eae91;
+    border: #111;
+    outline: none;
+    border-radius: 2rem;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 500px;
+    cursor: pointer;
+    justify-content: center;
+    margin: 30px;
+    white-space: normal;
+    word-wrap: break-word;
+    text-decoration: none;
+  }
+
+  .schoolButtons:hover {
+    background: #076f64;
+    text-decoration: none;
+  }
+
+  .schoolButtonsActive{
+    background: #013631;
+  }
+
+  .schoolButtons:active{
+    background: #013631;
+    transform: translateY(4px);
+  }
+
+  .schoolButtons__text{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    height: 100%;
+  }
   /* About Me */
   
   .PDFContainer
