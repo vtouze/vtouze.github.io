@@ -44,9 +44,6 @@ body {
     text-decoration: underline;
   }
 
-  /* Parralax */
-  
-
   /* Arrow Up */
 
   .go-top-btn{
@@ -516,7 +513,7 @@ body {
   
   /* Fade */
 
-  @keyframes transitionIn 
+  /*@keyframes transitionIn 
   {
     from
     {
@@ -528,7 +525,7 @@ body {
       opacity: 1;
       transform: rotateX(0);
     }
-  }
+  }*/
 
   /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
