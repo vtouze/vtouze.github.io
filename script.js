@@ -22,7 +22,7 @@ goTopBtn.addEventListener('click', () => {window.scrollTo({top:0, behavior:'smoo
 document.addEventListener('mousemove', parallax);
 function parallax(e)
 {
-    this.querySelectorAll('.layer').forEach(Layer => {
+    this.querySelectorAll('.layer').forEach(layer => {
         const speed = layer.getAttribute('data-speed')
 
         const x = (window.innerWidth - e.pageX*speed)
@@ -47,12 +47,18 @@ window.onload = () => {
 
         anchor.addEventListener('click', e => {
             e.preventDefault();
-            let target = e.target.href;
+            let target = anchor.href;
 
             transition_el.classList.add("is-active");
 
             setTimeout(() => {
-                window.location.href = target;
+                console.log(e);
+                if(anchor.target == "_blank"){
+                    window.open(target);
+                    transition_el.classList.remove('is-active');
+                } else {
+                    window.location.href = target;
+                }
             }, 500);
         });
     }
