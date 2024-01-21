@@ -1,3 +1,8 @@
+::selection {
+  background-color: #4eae91;
+  color: white;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -7,7 +12,6 @@ body {
   h1 {
     padding: 8px;
     background: #4eae91;
-    /*(255, 0, 0, 0.8);*/
     border-radius: 8px;
     margin: 0;
     font-size: 64px;
@@ -39,6 +43,9 @@ body {
   a:hover {
     text-decoration: underline;
   }
+
+  /* Parralax */
+  
 
   /* Arrow Up */
 
