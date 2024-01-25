@@ -15,7 +15,7 @@ body {
     border-radius: 8px;
     margin: 0;
     font-size: 64px;
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto", sans-serif;
   }
 
   h2 {
@@ -157,7 +157,7 @@ body {
     text-align: right;
   }
 
-  /* Contact */
+  /* Contact *//*
   .container
   {
     width: 100%;
@@ -450,8 +450,75 @@ body {
   footer #social-media-footer ul li:hover a .fa-github {
     color: #333;
   }
+
+  /* Images Slider */
+
+  .slider{
+    width: 1200px;
+    max-width: 100vw;
+    height: 700px;
+    margin: left;
+    position: relative;
+    overflow: hidden;
+  }
+  .slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+  }
+  .slider .list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  .slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  .slider .dots li.active{
+    width: 30px;
+  }
   
-  /* Blog List page */
+  /* Projects Page */
   
   .page-heading{
     font-size:32px;
@@ -480,7 +547,7 @@ body {
     color:#333;
   }
     
-  /* Single Blogpost */
+  /* Single ProjectPost */
   
   #post-container{
     display: flex;
@@ -505,31 +572,20 @@ body {
   
   #sidebar{
     background:#333;
-    flex:1;
+    flex: 1;
     padding: 8px 16px;
     color:white;
     box-shadow: inset 27px 0 51px -18px rgba(0,0,0,0.75);
-  }  
-  
-  /* Fade */
-
-  /*@keyframes transitionIn 
-  {
-    from
-    {
-      opacity: 0;
-      transform: rotateX(0deg);
-    }
-    to
-    {
-      opacity: 1;
-      transform: rotateX(0);
-    }
-  }*/
-
+  }
   /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
   /* Media Queries */
+
+  @media screen and (max-width: 768px){
+    .slider{
+      height: 400px;
+    }
+  }
   
   @media (max-width: 900px) {
     nav ul {
