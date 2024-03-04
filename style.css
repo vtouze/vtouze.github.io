@@ -3,6 +3,18 @@
   color: white;
 }
 
+.underline{
+  text-decoration: underline;
+}
+.center{
+  text-align: center;
+  font-size: 24px;
+}
+
+.keyPoints {
+  padding: 0px 30px;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -66,7 +78,7 @@ body {
     height: 30px;
     width: 30px;
   }
-
+  
   /* School Projects */
 
   .schoolButtons{
