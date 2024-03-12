@@ -1,18 +1,9 @@
-::selection {
-  background-color: #4eae91;
-  color: white;
-}
-
 .underline{
   text-decoration: underline;
 }
 .center{
   text-align: center;
   font-size: 24px;
-}
-
-.keyPoints {
-  padding: 0px 30px;
 }
 
 body {
@@ -169,7 +160,7 @@ body {
     text-align: right;
   }
 
-  /* Contact *//*
+  /* Contact */
   .container
   {
     width: 100%;
@@ -433,6 +424,7 @@ body {
   
   footer #social-media-footer a .fa-linkedin,
   footer #social-media-footer a .fa-itch-io,
+  footer #social-media-footer a .fa-envelope,
   footer #social-media-footer a .fa-github {
     color: white;
     transition: 0.4s;
@@ -461,6 +453,10 @@ body {
   
   footer #social-media-footer ul li:hover a .fa-github {
     color: #333;
+  }
+
+  footer #social-media-footer ul li:hover a .fa-envelope{
+    color: #3bbdfa;
   }
 
   /* Images Slider */
