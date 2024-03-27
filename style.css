@@ -437,6 +437,7 @@ footer #right-footer > p {
 footer #social-media-footer a .fa-linkedin,
 footer #social-media-footer a .fa-itch-io,
 footer #social-media-footer a .fa-envelope,
+footer #social-media-footer a .fa-gamepad,
 footer #social-media-footer a .fa-github {
   color: white;
   transition: 0.4s;
@@ -451,11 +452,12 @@ footer #social-media-footer ul {
 
 footer #social-media-footer ul li {
   font-size: 48px;
-  padding: 16px;
+  padding: 20px;
   transition: 0.4s;
 }
 
-footer #social-media-footer ul li:hover a .fa-itch-io {
+footer #social-media-footer ul li:hover a .fa-itch-io,
+footer #social-media-footer ul li:hover a .fa-gamepad {
   color: #ad1111;
 }
 
@@ -468,7 +470,7 @@ footer #social-media-footer ul li:hover a .fa-github {
 }
 
 footer #social-media-footer ul li:hover a .fa-envelope{
-  color: #3bbdfa;
+  color: #4fc7ff;
 }
 
 /* Images Slider */
