@@ -72,7 +72,7 @@ function highlightMobileNavLink(path) {
         return "link-about";
     } else if (path.startsWith("/perso/")) {
         return "link-perso";
-    } else if (path.startsWith("/professional/")) {
+    } else if (path.startsWith("/pro/")) {
         return "link-pro";
     } else if (path === "/misc/EnglishResume.pdf") {
         return "link-resume";
@@ -93,7 +93,7 @@ function highlightDesktopNavLink(path) {
         return "link-desktop-about";
     } else if (path.startsWith("/perso/")) {
         return "link-desktop-perso";
-    } else if (path.startsWith("/professional/")) {
+    } else if (path.startsWith("/pro/")) {
         return "link-desktop-pro";
     } else if (path === "/misc/EnglishResume.pdf") {
         return "link-desktop-resume";
