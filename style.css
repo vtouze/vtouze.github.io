@@ -30,7 +30,7 @@ h1 {
 }
 
 .title{
-  background: #4eae91;
+  background: #0c6353;
 }
 
 h2 {
@@ -82,7 +82,7 @@ a:hover {
   height: 50px;
   width: 150px;
   padding: 0;
-  background: #4eae91;
+  background: #5ead64;
   border: #111;
   outline: none;
   border-radius: 2rem;
@@ -98,16 +98,16 @@ a:hover {
 }
 
 .schoolButtons:hover {
-  background: #076f64;
+  background: #1a8469;
   text-decoration: none;
 }
 
 .schoolButtonsActive {
-  background: #013631;
+  background: #1a8469;
 }
 
 .schoolButtons:active {
-  background: #013631;
+  background: #5ead64;
   transform: translateY(4px);
 }
 
@@ -207,7 +207,7 @@ form input, form textarea {
 
 form button {
   padding: 15px;
-  background: #076f64;
+  background: #79bc63;
   color: #fff;
   font-size: 18px;
   border: 0;
@@ -242,7 +242,7 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgba(0, 0, 0, .6) url("img/background.jpg");
+  background: rgba(0, 0, 0, .2) url("img/background.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -254,7 +254,7 @@ textarea:focus {
   background: #202125;
   border-radius: 8px;
   padding: 0 24px;
-  font-size: 45px;
+  font-size: 50px;
 }
 
 /* Navigation */

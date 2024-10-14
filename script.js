@@ -74,7 +74,7 @@ function highlightMobileNavLink(path) {
         return "link-perso";
     } else if (path.startsWith("/pro/")) {
         return "link-pro";
-    } else if (path === "/misc/EnglishResume.pdf") {
+    } else if (path === "./misc/[EN]VirgileTouze_Resume.pdf") {
         return "link-resume";
     }
 }
@@ -95,7 +95,7 @@ function highlightDesktopNavLink(path) {
         return "link-desktop-perso";
     } else if (path.startsWith("/pro/")) {
         return "link-desktop-pro";
-    } else if (path === "/misc/EnglishResume.pdf") {
+    } else if (path === "./misc/[EN]VirgileTouze_Resume.pdf") {
         return "link-desktop-resume";
     }
 }
