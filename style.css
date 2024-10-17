@@ -71,6 +71,11 @@ a:hover {
   transition: all 0.25s ease;
 }
 
+.go-top-btn:hover{
+  background: #b1afaf;
+  /*border: #7a7474;*/
+}
+
 .go-top-btn img {
   height: 30px;
   width: 30px;
@@ -508,6 +513,7 @@ footer #social-media-footer ul li:hover a .fa-envelope{
   justify-content: space-between;
 }
 
+
 .slider .buttons button{
   cursor: pointer;
   width: 50px;
@@ -518,6 +524,10 @@ footer #social-media-footer ul li:hover a .fa-envelope{
   border: none;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+}
+
+.slider .buttons button:hover{
+  background: #333;
 }
 
 .slider .dots{
